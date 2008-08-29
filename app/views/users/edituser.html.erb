@@ -1,0 +1,14 @@
+<h1>Editing user</h1>
+
+<%= error_messages_for :user %>
+
+<% form_for(@user) do |f| %>
+  <p>
+    <b>New Password</b><br />
+    <%= f.text_field :crypt, size => 8 %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>

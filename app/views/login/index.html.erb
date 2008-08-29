@@ -1,0 +1,19 @@
+
+<%= error_messages_for :login %>
+
+<fieldset> 
+<legend>Enter your email and password to log in</legend>
+<% form_tag :action => 'login_in' do %>
+    <p>
+	<label for="email">Email</label><br/>
+	<%= text_field_tag :email %>
+    </p>
+
+  <p>
+	<label for="crypt">Password</label><br/>
+	<%= password_field_tag :crypt %>
+   </p>
+ <%= submit_tag "Login" %>
+<% end %>
+
+</fieldset>

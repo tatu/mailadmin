@@ -1,0 +1,48 @@
+<p>
+  <b>Email:</b>
+  <%=h @user.email %>
+</p>
+
+<p>
+  <b>Crypt:</b>
+  <%=h @user.crypt %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @user.name %>
+</p>
+
+<p>
+  <b>Uid:</b>
+  <%=h @user.uid %>
+</p>
+
+<p>
+  <b>Gid:</b>
+  <%=h @user.gid %>
+</p>
+
+<p>
+  <b>Homedir:</b>
+  <%=h @user.homedir %>
+</p>
+
+<p>
+  <b>Maildir:</b>
+  <%=h @user.maildir %>
+</p>
+
+<p>
+  <b>Quota:</b>
+  <%=h @user.quota %>
+</p>
+
+<p>
+  <b>Postfix:</b>
+  <%=h @user.postfix %>
+</p>
+
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

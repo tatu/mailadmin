@@ -1,0 +1,57 @@
+<h1>Editing user</h1>
+
+<%= error_messages_for :user %>
+
+<% form_for(@user) do |f| %>
+  <p>
+    <b>Email</b><br />
+    <%= f.text_field :email %>
+  </p>
+
+  <p>
+    <b>Crypt</b><br />
+    <%= f.text_field :crypt %>
+  </p>
+
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>Uid</b><br />
+    <%= f.text_field :uid %>
+  </p>
+
+  <p>
+    <b>Gid</b><br />
+    <%= f.text_field :gid %>
+  </p>
+
+  <p>
+    <b>Homedir</b><br />
+    <%= f.text_field :homedir %>
+  </p>
+
+  <p>
+    <b>Maildir</b><br />
+    <%= f.text_field :maildir %>
+  </p>
+
+  <p>
+    <b>Quota</b><br />
+    <%= f.text_field :quota %>
+  </p>
+
+  <p>
+    <b>Postfix</b><br />
+    <%= f.text_field :postfix %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @user %> |
+<%= link_to 'Back', users_path %>

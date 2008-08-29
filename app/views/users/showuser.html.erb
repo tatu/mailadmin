@@ -1,0 +1,21 @@
+<%= error_messages_for 'login' %>
+<p>
+  <b>Email:</b>
+  <%=h @user.email %>
+</p>
+
+<p>
+  <b>Password:</b>
+     Secret
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @user.name %>
+</p>
+
+<%= link_to 'Change Password', :action => 'edituser', :id => @user.id %>
+<%= link_to 'Logout', :controller => 'login', :action => 'logout' %>
+<% if session["auth"].id == 3 %>
+  <%= link_to 'Admin', users_path %> 
+<% end %>

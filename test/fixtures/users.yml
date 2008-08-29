@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  email: 
+  crypt: 
+  name: 
+  uid: 1
+  gid: 1
+  homedir: 
+  maildir: 
+  quota: 
+  postfix: MyString
+
+two:
+  email: 
+  crypt: 
+  name: 
+  uid: 1
+  gid: 1
+  homedir: 
+  maildir: 
+  quota: 
+  postfix: MyString
