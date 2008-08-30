@@ -17,7 +17,7 @@ class ApplicationController < ActionController::Base
       end
     end
    def admin
-	unless session["auth"].id == 3
+	unless session["auth"].id == 1
 	  redirect_to :controller => "users", :action => "showuser", :id => session["auth"].id
 	  return false
         end

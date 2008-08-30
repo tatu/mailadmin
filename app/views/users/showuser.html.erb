@@ -16,6 +16,6 @@
 
 <%= link_to 'Change Password', :action => 'edituser', :id => @user.id %>
 <%= link_to 'Logout', :controller => 'login', :action => 'logout' %>
-<% if session["auth"].id == 3 %>
+<% if session["auth"].id == 1 %>
   <%= link_to 'Admin', users_path %> 
 <% end %>

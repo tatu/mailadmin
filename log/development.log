@@ -6927,3 +6927,273 @@ Processing UsersController#index (for 71.243.32.27 at 2008-08-28 22:49:01) [GET]
 Rendering template within layouts/users
 Rendering users/index
 Completed in 0.11745 (8 reqs/sec) | Rendering: 0.08449 (71%) | DB: 0.02502 (21%) | 200 OK [http://www.binaryfreedom.info/users]
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.000079)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000047)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Access denied for user 'mailsql'@'localhost' to database 'mailsql': CREATE DATABASE `mailsql` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.000100)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000054)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Access denied for user 'mailsql'@'localhost' to database 'mailsql': CREATE DATABASE `mailsql` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.000086)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000059)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000000)[0m   [0;1mMysql::Error: Access denied for user 'mailsql'@'localhost' to database 'mailsql': CREATE DATABASE `mailsql` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.000080)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000052)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000119)[0m   [0;1mCREATE DATABASE `mailsql` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.000081)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000062)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000168)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.040224)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.004327)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000148)[0m   [0mSHOW TABLES[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.000089)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000056)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000169)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000186)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000045)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (1)
+  [4;35;1mSQL (0.000044)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.050136)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(128) NOT NULL, `crypt` varchar(128) DEFAULT 'aqui password' NOT NULL, `name` varchar(255) NOT NULL, `uid` int(11) DEFAULT '1000' NOT NULL, `gid` int(11) DEFAULT '1000' NOT NULL, `homedir` varchar(255) DEFAULT '/home/vmail' NOT NULL, `maildir` varchar(255) DEFAULT '/home/vmail/' NOT NULL, `quota` text NOT NULL, `postfix` varchar(255) DEFAULT 'y' NOT NULL, `created_at` datetime DEFAULT NULL NULL, `updated_at` datetime DEFAULT NULL NULL) ENGINE=InnoDB[0m
+  [4;35;1mSQL (0.004055)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to AddDefaultUser (20080830184608)
+  [4;36;1mSQL (0.000139)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mUser Columns (0.000728)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000144)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@admin.org') LIMIT 1[0m
+  [4;35;1mSQL (0.000046)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000092)[0m   [0;1mSELECT `email` FROM `users` WHERE (`users`.email = 'admin') [0m
+  [4;35;1mSQL (0.000046)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.002435)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080830184608')[0m
+  [4;35;1mSQL (0.000090)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000120)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000523)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.000486)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000134)[0m   [0mSHOW KEYS FROM `users`[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-08-30 15:05:09) [GET]
+  Session ID: e774eaee001b1f035c94beb2e6e94b0d
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mSQL (0.000363)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000148)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 0.01551 (64 reqs/sec) | Rendering: 0.00890 (57%) | DB: 0.00051 (3%) | 200 OK [http://127.0.0.1/]
+
+
+Processing LoginController#login_in (for 127.0.0.1 at 2008-08-30 15:05:16) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjBmMDVhNGUzMjVlMGY0YzRlMjZiNTMzNzg2NTdm
+NWIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--6313b5e4fdabe98d53dadc06e6e35daf06dcc967
+  Parameters: {"commit"=>"Login", "crypt"=>"admin", "authenticity_token"=>"660a4894c534df76b166612fff9c1554c185dbff", "action"=>"login_in", "controller"=>"login", "email"=>"admin@admin.org"}
+  [4;36;1mUser Load (0.000751)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'admin@admin.org' AND crypt = 'adpexzg3FUZAk') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/login/logout
+Completed in 0.00584 (171 reqs/sec) | DB: 0.00075 (12%) | 302 Found [http://127.0.0.1/login/login_in]
+
+
+Processing LoginController#logout (for 127.0.0.1 at 2008-08-30 15:05:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlYjBmMDVhNGUzMjVlMGY0YzRlMjZiNTMzNzg2NTdm
+NWIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--6313b5e4fdabe98d53dadc06e6e35daf06dcc967
+  Parameters: {"action"=>"logout", "controller"=>"login"}
+Redirected to http://127.0.0.1:3000/
+Completed in 0.00236 (423 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/login/logout]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-08-30 15:05:16) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiAAY6CkB1c2VkewY7BkY=--bca8f167b80f092240393a3a87867c0e616c3989
+  Parameters: {"action"=>"index", "controller"=>"login"}
+Rendering template within layouts/application
+Rendering login/index
+Completed in 0.00273 (366 reqs/sec) | Rendering: 0.00106 (38%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-08-30 15:06:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOTI3ZGI4ZWE1MzlkMjUzZTVhOWYzZWZiZmUyMWY1
+MjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIgAGOgpAdXNlZHsGOwdU--f7bdcde46d29e615d0697f58e91bca6a0112c9e2
+  Parameters: {"action"=>"index", "controller"=>"login"}
+Rendering template within layouts/application
+Rendering login/index
+Completed in 0.00613 (163 reqs/sec) | Rendering: 0.00215 (35%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/]
+
+
+Processing LoginController#login_in (for 127.0.0.1 at 2008-08-30 15:06:24) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOTI3ZGI4ZWE1MzlkMjUzZTVhOWYzZWZiZmUyMWY1
+MjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c65c14835c7797677341b6f45f654e0d0574dad6
+  Parameters: {"commit"=>"Login", "crypt"=>"admin", "authenticity_token"=>"7a369b1c5add6e7036a3ebbb1762ea7746d49d59", "action"=>"login_in", "controller"=>"login", "email"=>"admin@admin.org"}
+  [4;35;1mUser Load (0.000083)[0m   [0mSELECT * FROM `users` WHERE (email = 'admin@admin.org' AND crypt = 'adpexzg3FUZAk') LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/login/logout
+Completed in 0.00463 (216 reqs/sec) | DB: 0.00008 (1%) | 302 Found [http://127.0.0.1/login/login_in]
+
+
+Processing LoginController#logout (for 127.0.0.1 at 2008-08-30 15:06:24) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlOTI3ZGI4ZWE1MzlkMjUzZTVhOWYzZWZiZmUyMWY1
+MjQiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c65c14835c7797677341b6f45f654e0d0574dad6
+  Parameters: {"action"=>"logout", "controller"=>"login"}
+Redirected to http://127.0.0.1:3000/
+Completed in 0.00236 (423 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/login/logout]
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-08-30 15:06:24) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsGOgtub3RpY2UiAAY6CkB1c2VkewY7BkY=--bca8f167b80f092240393a3a87867c0e616c3989
+  Parameters: {"action"=>"index", "controller"=>"login"}
+Rendering template within layouts/application
+Rendering login/index
+Completed in 0.00302 (331 reqs/sec) | Rendering: 0.00109 (36%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/]
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.000082)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000050)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000179)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000054)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000093)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000045)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddDefaultUser (20080830184608)
+  [4;36;1mSQL (0.000037)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.049921)[0m   [0mDELETE FROM schema_migrations WHERE version = '20080830184608'[0m
+  [4;36;1mSQL (0.000171)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000118)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000588)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.000485)[0m   [0mdescribe `users`[0m
+  [4;36;1mSQL (0.000125)[0m   [0;1mSHOW KEYS FROM `users`[0m
+  [4;35;1mSQL (0.000085)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000037)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (1)
+  [4;35;1mSQL (0.000034)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to AddDefaultUser (20080830184608)
+  [4;36;1mSQL (0.000033)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mUser Columns (0.000512)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.000043)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@admin.org') LIMIT 1[0m
+  [4;35;1mSQL (0.000038)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.000128)[0m   [0;1mSELECT `email` FROM `users` WHERE (`users`.email = 'admin@admin.org') [0m
+  [4;35;1mUser Create (0.000000)[0m   [0mMysql::Error: Column 'name' cannot be null: INSERT INTO `users` (`name`, `created_at`, `gid`, `maildir`, `crypt`, `homedir`, `updated_at`, `quota`, `uid`, `email`, `postfix`) VALUES(NULL, '2008-08-30 15:07:20', 1000, '/home/vmail/', 'adpexzg3FUZAk', '/home/vmail', '2008-08-30 15:07:20', NULL, 1000, 'admin@admin.org', 'y')[0m
+  [4;36;1mSQL (0.000042)[0m   [0;1mROLLBACK[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.000089)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000052)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000167)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000056)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000036)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000097)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000040)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000036)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (1)
+  [4;36;1mSQL (0.000037)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.037246)[0m   [0mDROP TABLE `users`[0m
+  [4;36;1mSQL (0.000717)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '1'[0m
+  [4;35;1mSQL (0.000115)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000110)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000092)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000039)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000035)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (1)
+  [4;36;1mSQL (0.000035)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.002338)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(128) NOT NULL, `crypt` varchar(128) DEFAULT 'aqui password' NOT NULL, `name` varchar(255) NOT NULL, `uid` int(11) DEFAULT '1000' NOT NULL, `gid` int(11) DEFAULT '1000' NOT NULL, `homedir` varchar(255) DEFAULT '/home/vmail' NOT NULL, `maildir` varchar(255) DEFAULT '/home/vmail/' NOT NULL, `quota` text NOT NULL, `postfix` varchar(255) DEFAULT 'y' NOT NULL, `created_at` datetime DEFAULT NULL NULL, `updated_at` datetime DEFAULT NULL NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000400)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to AddDefaultUser (20080830184608)
+  [4;35;1mSQL (0.000085)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mUser Columns (0.000657)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000125)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@admin.org') LIMIT 1[0m
+  [4;36;1mSQL (0.000036)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000085)[0m   [0mSELECT `email` FROM `users` WHERE (`users`.email = 'admin@admin.org') [0m
+  [4;36;1mUser Create (0.000000)[0m   [0;1mMysql::Error: Column 'quota' cannot be null: INSERT INTO `users` (`name`, `created_at`, `gid`, `maildir`, `crypt`, `homedir`, `updated_at`, `quota`, `uid`, `email`, `postfix`) VALUES('admin', '2008-08-30 15:08:09', 1000, '/home/vmail/', 'adpexzg3FUZAk', '/home/vmail', '2008-08-30 15:08:09', NULL, 1000, 'admin@admin.org', 'y')[0m
+  [4;35;1mSQL (0.000040)[0m   [0mROLLBACK[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.000076)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000050)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000105)[0m   [0;1mCREATE DATABASE `mailsql` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_general_ci`[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.000081)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000049)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000153)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.057474)[0m   [0mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.007409)[0m   [0;1mCREATE UNIQUE INDEX `unique_schema_migrations` ON `schema_migrations` (`version`)[0m
+  [4;35;1mSQL (0.000176)[0m   [0mSHOW TABLES[0m
+  [4;36;1mSQL (0.000126)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.000035)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (1)
+  [4;36;1mSQL (0.000034)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.003015)[0m   [0mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `email` varchar(128) NOT NULL, `crypt` varchar(128) DEFAULT 'aqui password' NOT NULL, `name` varchar(255) NOT NULL, `uid` int(11) DEFAULT '1000' NOT NULL, `gid` int(11) DEFAULT '1000' NOT NULL, `homedir` varchar(255) DEFAULT '/home/vmail' NOT NULL, `maildir` varchar(255) DEFAULT '/home/vmail/' NOT NULL, `quota` text NOT NULL, `postfix` varchar(255) DEFAULT 'y' NOT NULL, `created_at` datetime DEFAULT NULL NULL, `updated_at` datetime DEFAULT NULL NULL) ENGINE=InnoDB[0m
+  [4;36;1mSQL (0.000427)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('1')[0m
+Migrating to AddDefaultUser (20080830184608)
+  [4;35;1mSQL (0.000083)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mUser Columns (0.000601)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000113)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@admin.org') LIMIT 1[0m
+  [4;36;1mSQL (0.000040)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000098)[0m   [0mSELECT `email` FROM `users` WHERE (`users`.email = 'admin@admin.org') [0m
+  [4;36;1mUser Create (0.000000)[0m   [0;1mMysql::Error: Column 'quota' cannot be null: INSERT INTO `users` (`name`, `created_at`, `gid`, `maildir`, `crypt`, `homedir`, `updated_at`, `quota`, `uid`, `email`, `postfix`) VALUES('admin', '2008-08-30 15:08:45', 1000, '/home/vmail/', 'adpexzg3FUZAk', '/home/vmail', '2008-08-30 15:08:45', NULL, 1000, 'admin@admin.org', 'y')[0m
+  [4;35;1mSQL (0.000040)[0m   [0mROLLBACK[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+  [4;36;1mSQL (0.000076)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000046)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.000214)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000050)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (1)
+  [4;36;1mSQL (0.000035)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to AddDefaultUser (20080830184608)
+  [4;35;1mSQL (0.000034)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mUser Columns (0.006080)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.007582)[0m   [0mSELECT * FROM `users` WHERE (`users`.`email` = 'admin@admin.org') LIMIT 1[0m
+  [4;36;1mSQL (0.000045)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.000045)[0m   [0mSELECT `email` FROM `users` WHERE (`users`.email = 'admin@admin.org') [0m
+  [4;36;1mUser Create (0.000188)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `gid`, `maildir`, `crypt`, `homedir`, `updated_at`, `quota`, `uid`, `email`, `postfix`) VALUES('admin', '2008-08-30 15:10:33', 1000, '/home/vmail/', 'adpexzg3FUZAk', '/home/vmail', '2008-08-30 15:10:33', '', 1000, 'admin@admin.org', 'y')[0m
+  [4;35;1mSQL (0.098156)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.000725)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20080830184608')[0m
+  [4;35;1mSQL (0.000166)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.000168)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.000879)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.000787)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (0.000209)[0m   [0mSHOW KEYS FROM `users`[0m
+DEPRECATION WARNING: config.action_view.cache_template_extensions option has been deprecated and has no affect. Please remove it from your config files.  See http://www.rubyonrails.org/deprecation for details. (called from send at /var/lib/gems/1.8/gems/rails-2.1.0/lib/initializer.rb:455)
+
+
+Processing LoginController#index (for 127.0.0.1 at 2008-08-30 15:10:43) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDZjMTlkNjBkOGU3ZTc3ZGViZTY3Y2E4NDZmZWQy
+MzgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIgAGOgpAdXNlZHsGOwdU--7a72751d7861fb5c29c4cabf35dd8ea6881c33d1
+  Parameters: {"action"=>"index", "controller"=>"login"}
+  [4;36;1mSQL (0.000133)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000065)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Rendering template within layouts/application
+Rendering login/index
+Completed in 0.00464 (215 reqs/sec) | Rendering: 0.00288 (62%) | DB: 0.00020 (4%) | 200 OK [http://127.0.0.1/]
+
+
+Processing LoginController#login_in (for 127.0.0.1 at 2008-08-30 15:10:48) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMDZjMTlkNjBkOGU3ZTc3ZGViZTY3Y2E4NDZmZWQy
+MzgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--be587975901a945b4028983c3c664bd819548bb7
+  Parameters: {"commit"=>"Login", "crypt"=>"admin", "authenticity_token"=>"aac7ecb451036714a81384779857e8fc6d68164b", "action"=>"login_in", "controller"=>"login", "email"=>"admin@admin.org"}
+  [4;36;1mUser Load (0.000387)[0m   [0;1mSELECT * FROM `users` WHERE (email = 'admin@admin.org' AND crypt = 'adpexzg3FUZAk') LIMIT 1[0m
+  [4;35;1mUser Columns (0.000732)[0m   [0mSHOW FIELDS FROM `users`[0m
+Redirected to http://127.0.0.1:3000/users/showuser/1
+Completed in 0.00733 (136 reqs/sec) | DB: 0.00112 (15%) | 302 Found [http://127.0.0.1/login/login_in]
+
+
+Processing UsersController#showuser (for 127.0.0.1 at 2008-08-30 15:10:48) [GET]
+  Session ID: BAh7CCIJYXV0aG86CVVzZXIHOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0
+cmlidXRlc3sRIgluYW1lIgphZG1pbiIPY3JlYXRlZF9hdCIYMjAwOC0wOC0z
+MCAxNToxMDozMyIIZ2lkIgkxMDAwIgxtYWlsZGlyIhEvaG9tZS92bWFpbC8i
+CmNyeXB0IhJhZHBleHpnM0ZVWkFrIgxob21lZGlyIhAvaG9tZS92bWFpbCIP
+dXBkYXRlZF9hdCIYMjAwOC0wOC0zMCAxNToxMDozMyIKcXVvdGEiACIHaWQi
+BjEiCHVpZCIJMTAwMCIKZW1haWwiFGFkbWluQGFkbWluLm9yZyIMcG9zdGZp
+eCIGeToMY3NyZl9pZCIlMDZjMTlkNjBkOGU3ZTc3ZGViZTY3Y2E4NDZmZWQy
+MzgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--68fbea0415412f8c650d7633491f551084c3f568
+  Parameters: {"action"=>"showuser", "id"=>"1", "controller"=>"users"}
+  [4;36;1mUser Columns (0.000731)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000180)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 1) [0m
+Rendering template within layouts/users
+Rendering users/showuser
+Completed in 0.00734 (136 reqs/sec) | Rendering: 0.00362 (49%) | DB: 0.00091 (12%) | 200 OK [http://127.0.0.1/users/showuser/1]
