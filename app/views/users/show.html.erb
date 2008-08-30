@@ -1,3 +1,5 @@
+<div id="usuario">
+<h2><%=h @user.name %> information</h2>
 <p>
   <b>Email:</b>
   <%=h @user.email %>
@@ -43,6 +45,6 @@
   <%=h @user.postfix %>
 </p>
 
-
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
+</div>
