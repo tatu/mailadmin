@@ -1,4 +1,4 @@
-body { background-color: #232323; color: #333; }
+body { background-color: #000; color: #333; }
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -29,6 +29,17 @@ a:hover {
 
 /*-Content----*/
 
+#outwrap {
+  color: #999;
+  width: 350px;
+  border: 2px solid #b71e1e;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #9e0000;
+  padding: 5px;
+  padding-bottom: 20px;
+}
+
 #wrap { 
   color: #000;
   margin: 0 auto;
@@ -37,8 +48,14 @@ a:hover {
   padding: 10px;
 }
 
+#menuh {
+  text-align: right;
+  background-color: #510000;
+  padding: 2px;
+}
+
 #contenido {
-  color: #999;
+  color: #414141;
   width: 300px;
   border: 2px solid #999;
   margin: 0 auto; 
@@ -47,15 +64,30 @@ a:hover {
   padding: 10px; 
 }
 
+#contenido h1{
+  color: #171717;
+}
+
+#usuario { 
+  color: #000;
+  width: 300px;
+  border: 2px solid #999;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #eee;
+  padding: 10px;
+}
+
 #usuarios {
   padding: 15px;
+  background-color: #515151;
 }
 
 #usuarios h1 {
   color: #fff;
-  background-color: #000;
+  margin: 0px;
   padding: 10px;
-  height: 20px;
+  background-color: #000;
 }
 
 #usuarios th { 
@@ -67,6 +99,11 @@ a:hover {
   padding: 2px;
   background-color: #fff;
   text-align: center;
+}
+
+#footer { 
+  color: #fff;
+  font: bold 10px arial
 }
 
 /*-errores----*/

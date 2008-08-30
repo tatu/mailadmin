@@ -8,9 +8,12 @@
   <%= stylesheet_link_tag 'scaffold' %>
 </head>
 <body>
-<div id="contenido">
+<div id="outwrap">
   <p style="color: green"><%= flash[:notice] %></p>
   <%= yield  %>
+  <div id="footer">
+  <p>Rek2 and Tatu revolutionary tools.</p>
+  </div>
 </div>
 </body>
 </html>

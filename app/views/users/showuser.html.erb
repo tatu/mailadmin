@@ -1,7 +1,10 @@
+<div id="usuario">
+<h1>Welcome <%=h @user.name %></h1>
+<p>Here is your personal information in the system.</p>
 <%= error_messages_for 'login' %>
 <p>
-  <b>Email:</b>
-  <%=h @user.email %>
+  <b>Name:</b>
+  <%=h @user.name %>
 </p>
 
 <p>
@@ -10,8 +13,8 @@
 </p>
 
 <p>
-  <b>Name:</b>
-  <%=h @user.name %>
+  <b>Email:</b>
+  <%=h @user.email %>
 </p>
 
 <%= link_to 'Change Password', :action => 'edituser', :id => @user.id %>
@@ -19,3 +22,4 @@
 <% if session["auth"].id == 1 %>
   <%= link_to 'Admin', users_path %> 
 <% end %>
+</div>
