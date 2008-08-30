@@ -7197,3 +7197,21 @@ c2h7AAY6CkB1c2VkewA=--68fbea0415412f8c650d7633491f551084c3f568
 Rendering template within layouts/users
 Rendering users/showuser
 Completed in 0.00734 (136 reqs/sec) | Rendering: 0.00362 (49%) | DB: 0.00091 (12%) | 200 OK [http://127.0.0.1/users/showuser/1]
+
+
+Processing UsersController#index (for 127.0.0.1 at 2008-08-30 15:11:22) [GET]
+  Session ID: BAh7CCIJYXV0aG86CVVzZXIHOhZAYXR0cmlidXRlc19jYWNoZXsAOhBAYXR0
+cmlidXRlc3sRIgluYW1lIgphZG1pbiIPY3JlYXRlZF9hdCIYMjAwOC0wOC0z
+MCAxNToxMDozMyIMbWFpbGRpciIRL2hvbWUvdm1haWwvIghnaWQiCTEwMDAi
+D3VwZGF0ZWRfYXQiGDIwMDgtMDgtMzAgMTU6MTA6MzMiDGhvbWVkaXIiEC9o
+b21lL3ZtYWlsIgpjcnlwdCISYWRwZXh6ZzNGVVpBayIKcXVvdGEiACIIdWlk
+IgkxMDAwIgdpZCIGMSIMcG9zdGZpeCIGeSIKZW1haWwiFGFkbWluQGFkbWlu
+Lm9yZzoMY3NyZl9pZCIlMDZjMTlkNjBkOGU3ZTc3ZGViZTY3Y2E4NDZmZWQy
+MzgiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--a9e8a0d75025b1c96741d63873172adccc97e571
+  Parameters: {"action"=>"index", "controller"=>"users"}
+  [4;36;1mUser Columns (0.001291)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.000263)[0m   [0mSELECT * FROM `users` [0m
+Rendering template within layouts/users
+Rendering users/index
+Completed in 0.01381 (72 reqs/sec) | Rendering: 0.00665 (48%) | DB: 0.00155 (11%) | 200 OK [http://127.0.0.1/users]

@@ -18,7 +18,7 @@ development:
   adapter: mysql
   encoding: utf8
   database: mailsql
-  username: root
+  username: mailsql
   password: 
   socket: /var/run/mysqld/mysqld.sock
 
@@ -37,6 +37,6 @@ production:
   adapter: mysql
   encoding: utf8
   database: mailsql
-  username: root
+  username: mailsql
   password: 
   socket: /var/run/mysqld/mysqld.sock
