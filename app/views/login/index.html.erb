@@ -1,8 +1,8 @@
-
+<div id="contenido">
+<h1>Mailadmin</h1>
 <%= error_messages_for :login %>
 
-<fieldset> 
-<legend>Enter your email and password to log in</legend>
+<p><b>Enter your email and password to log in:</b></p>
 <% form_tag :action => 'login_in' do %>
     <p>
 	<label for="email">Email</label><br/>
@@ -15,5 +15,4 @@
    </p>
  <%= submit_tag "Login" %>
 <% end %>
-
-</fieldset>
+</div>

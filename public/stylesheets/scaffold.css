@@ -1,4 +1,4 @@
-body { background-color: #fff; color: #333; }
+body { background-color: #232323; color: #333; }
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
@@ -12,9 +12,64 @@ pre {
   font-size: 11px;
 }
 
-a { color: #000; }
-a:visited { color: #666; }
-a:hover { color: #fff; background-color:#000; }
+a { 
+  color: #ec0000;
+  font-weight: bold; 
+}
+
+a:visited { 
+  color: #666;
+  font-weight: bold;
+}
+
+a:hover { 
+  color: #c30000; 
+  font-weight: bold;
+}
+
+/*-Content----*/
+
+#wrap { 
+  color: #000;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #232323;
+  padding: 10px;
+}
+
+#contenido {
+  color: #999;
+  width: 300px;
+  border: 2px solid #999;
+  margin: 0 auto; 
+  text-align: center;
+  background-color: #eee;
+  padding: 10px; 
+}
+
+#usuarios {
+  padding: 15px;
+}
+
+#usuarios h1 {
+  color: #fff;
+  background-color: #000;
+  padding: 10px;
+  height: 20px;
+}
+
+#usuarios th { 
+  color: #fff;
+  background-color: #8c0000;
+}
+
+#usuarios td{
+  padding: 2px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/*-errores----*/
 
 .fieldWithErrors {
   padding: 2px;

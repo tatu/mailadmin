@@ -1,36 +1,28 @@
+<div id="usuarios">
 <h1>Listing users</h1>
+  <table>
+    <tr>
+      <th>Email</th>
+      <th>Name</th>
+      <th>Uid</th>
+      <th>Gid</th>
+      <th>Maildir</th>
+    </tr>
 
-<table>
-  <tr>
-    <th>Email</th>
-    <th>Crypt</th>
-    <th>Name</th>
-    <th>Uid</th>
-    <th>Gid</th>
-    <th>Homedir</th>
-    <th>Maildir</th>
-    <th>Quota</th>
-    <th>Postfix</th>
-  </tr>
-
-<% for user in @users %>
-  <tr>
-    <td><%=h user.email %></td>
-    <td><%=h user.crypt %></td>
-    <td><%=h user.name %></td>
-    <td><%=h user.uid %></td>
-    <td><%=h user.gid %></td>
-    <td><%=h user.homedir %></td>
-    <td><%=h user.maildir %></td>
-    <td><%=h user.quota %></td>
-    <td><%=h user.postfix %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
+  <% for user in @users %>
+    <tr>
+      <td><%=h user.email %></td>
+      <td><%=h user.name %></td>
+      <td><%=h user.uid %></td>
+      <td><%=h user.gid %></td>
+      <td><%=h user.maildir %></td>
+      <td><%= link_to 'Show', user %></td>
+      <td><%= link_to 'Edit', edit_user_path(user) %></td>
+      <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+  </table>
+</div>
 <br />
 
 <%= link_to 'New user', new_user_path %>
