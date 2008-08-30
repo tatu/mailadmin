@@ -1,0 +1,15 @@
+You will need a ruby and rails install >= 2.0.2, no gems ;-) but of course you can contribute if you add
+to the app more features.
+Use my mysql schema instead of the one in the howto here:
+http://www.gentoo.org/doc/en/virt-mail-howto.xml
+
+1. the first think you may want to do is edit your config/database.yml and put mysql username and password
+and maybe edit  were the mysql sock lives so rails can find it.
+2. then have rails create the database, for this go into the root of the application and type
+	rake db:create && rake db:migrate
+this will create your database and tables! that easy yes, active directory is something to love..
+3. test it, you can pull up a test server running from the root of the app the command:
+	./script/server
+this will open a webserver on localhost:3000 go there and you will see the loging page.
+the default user is admin@admin.org and password admin PLEASE ERASE THIS USER and create one for yourself firt.
+
