@@ -32,10 +32,10 @@ a:hover {
 #outwrap {
   color: #999;
   width: 350px;
-  border: 2px solid #b71e1e;
+  border: 2px solid #883838;
   margin: 0 auto;
   text-align: center;
-  background-color: #9e0000;
+  background-color: #680000;
   padding: 5px;
   padding-bottom: 20px;
 }
@@ -46,20 +46,23 @@ a:hover {
   text-align: center;
   background-color: #232323;
   padding: 10px;
+  width: 1000px;
 }
 
 #menuh {
   text-align: left;
   background-color: #510000;
-  padding: 5px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid #7f1515;
 }
 
 #menuh a {
   color: #fff;
   font: bold 14px verdana;
-  border-right: 1px solid #fff;
+  border-right: 1px solid #7f1515;
+  border-left: 1px solid #7f1515;
   text-decoration: none;
-  padding-right: 5px;
+  padding: 5px 10px 5px 10px;
   height: 30px;
 }
 
@@ -90,6 +93,15 @@ a:hover {
   color: #171717;
 }
 
+#utitulo { 
+  color: #fff;
+  background-color: #000;
+  font: bold 40px arial;
+  text-align: center;
+  border-bottom: 5px solid #680000;
+  margin: 0;
+}
+
 #nuevo {
   color: #000;
   width: 300px;
@@ -112,6 +124,7 @@ a:hover {
 
 #usuarios {
   padding: 15px;
+  border: 1px solid #5e5e5e;
   background-color: #515151;
 }
 
@@ -122,16 +135,20 @@ a:hover {
   background-color: #000;
 }
 
+#usuarios a { color: #882a2a; }
+
 #usuarios th { 
   color: #fff;
   background-color: #8c0000;
 }
 
 #usuarios td{
-  padding: 2px;
-  background-color: #fff;
+  padding: 2px 20px 2px 20px;
+  background-color: #aeaeae;
   text-align: center;
 }
+
+#usuarios td.opciones { background-color: #ae7f7f; }
 
 #footer { 
   color: #fff;
