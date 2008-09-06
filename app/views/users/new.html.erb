@@ -7,19 +7,20 @@
 <%= error_messages_for :user %>
 
 <% form_for(@user) do |f| %>
+
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
   <p>
     <b>Email</b><br />
     <%= f.text_field :email %>
   </p>
 
   <p>
-    <b>Crypt</b><br />
+    <b>Password</b><br />
     <%= f.text_field :crypt %>
-  </p>
-
-  <p>
-    <b>Name</b><br />
-    <%= f.text_field :name %>
   </p>
 
   <p>

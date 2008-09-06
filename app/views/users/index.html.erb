@@ -1,9 +1,10 @@
 <div id="menuh">
   <%= link_to 'New user', new_user_path %>
+  <%= link_to 'Logout', :controller => 'login', :action => 'logout' %>
 </div>
 <div id="usuarios">
 <h1>Listing users</h1>
-  <table>
+  <table id="tabla">
     <tr>
       <th>Email</th>
       <th>Name</th>

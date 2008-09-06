@@ -1,7 +1,8 @@
+<h1 id="utitulo">Welcome <%=h @user.name %></h1>
+
 <div id="usuario">
-<h1>Welcome <%=h @user.name %></h1>
-<p>Here is your personal information in the system.</p>
 <%= error_messages_for 'login' %>
+<p>Here is your personal information in the system.</p>
 <p>
   <b>Name:</b>
   <%=h @user.name %>

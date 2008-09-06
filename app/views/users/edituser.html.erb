@@ -1,9 +1,10 @@
+<h1 id="utitulo">Editing <%=h @user.name %>'s password</h2>
 <div id="usuario">
-<h2>Editing <%=h @user.name %>'s password</h2>
 <p>Place your new password in the field and click Update.</p>
 <%= error_messages_for :user %>
 
 <% form_for(@user) do |f| %>
+
   <p>
     <b>New Password</b><br />
     <%= f.text_field :crypt, :size => 8 %>
