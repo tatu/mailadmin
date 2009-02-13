@@ -3,7 +3,7 @@ to the app more features.
 Use my mysql schema instead of the one in the howto here:
 http://www.gentoo.org/doc/en/virt-mail-howto.xml
 
-1. the first think you may want to do is edit your config/database.yml and put mysql username and password
+1. the first thing you may want to do is edit your config/database.yml and put mysql username and password
 and maybe edit  were the mysql sock lives so rails can find it.
 2. then have rails create the database, for this go into the root of the application and type
 	rake db:create && rake db:migrate
